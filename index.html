@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Expense Tracker</h1>
+        <div class="todays-balance">
+            <h2>Today's Balance: £<span id="balance">0.00</span></h2>
+        </div>
+        <div class="transaction-list">
+            <h2>Transactions</h2>
+            <ul id="transactions"></ul>
+        </div>
+        <div class="add-transaction">
+            <h2>Add a Transaction Below</h2>
+            <label for="transaction">Transaction</label>
+            <input type="text" id="text" placeholder="Enter text...">
+            <label for="amount">Amount <br>(money spent - money recieved)</label>
+            <input type="number" id="amount" placeholder="Enter amount...">
+            <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
