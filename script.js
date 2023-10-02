@@ -8,8 +8,9 @@ function addTransaction() {
     const amount = parseFloat(document.getElementById('amount').value);
 
 // Create a new list item for the transaction
+// delete button html injected directly into code in case user makes a mistake and wants to remove items
 const transaction = document.createElement('li');
-transaction.innerHTML = `${text} <span>${amount >= 0 ? '+' : '-'}£${Math.abs(amount).toFixed(2)}</span> <button onclick="removeTransaction(this)">Delete</button>`;
+transaction.innerHTML = `${text} <span>${amount >= 0 ? '+' : '-'}£${Math.abs(amount).toFixed(2)}</span> <button onclick="removeTransaction(this)" class="delete-button">Delete</button>`;
 
  // Append the transaction to the transactions list
  transactionsList.appendChild(transaction);

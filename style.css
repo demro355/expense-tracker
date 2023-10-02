@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', monospace;
     margin: 0;
     padding: 20px;
-    background-color: #f7f9fc;
+    background-color: #1f1f1f;
 }
 
 .container {
@@ -11,8 +11,9 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border: 2px solid #3498db; 
+    border: 1px solid #444; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
     
 h1 {
@@ -23,6 +24,11 @@ h1 {
 h2 {
     text-align: center;
     color: #333;
+}
+
+h3 {
+    text-align: center;
+    color:#333;
 }
 
 .todays-balance {
@@ -66,15 +72,37 @@ h2 {
 .add-transaction button {
     width: 100%;
     padding: 12px;
-    background-color: #3498db;
+    background-color: #333;
     color: #fff;
-    border: none;
+    border: 1px solid #555;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s ease;
+        
+    }
+    
+button:hover {
+    background-color: grey;
 }
 
+
 .add-transaction button:hover {
-    background-color: #2980b9;
+    background-color: grey;
 }
+
+.delete-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color:  grey;
+}
+
